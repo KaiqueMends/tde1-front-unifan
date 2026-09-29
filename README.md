@@ -29,12 +29,3 @@ O conteúdo foi organizado em apresentação, descrição da academia, programas
 ## Formulário
 
 O formulário mostra os campos de interesse e utiliza controles do Bootstrap. O botão de envio permanece desativado até que seja definido um endereço de contato ou um serviço de recebimento. Nenhuma informação preenchida é transmitida.
-
-## Entrega do TDE
-
-- Protótipo navegável no Figma: link a acrescentar pelo grupo.
-- Repositório GitHub: [KaiqueMends/Acad](https://github.com/KaiqueMends/Acad).
-- Site publicado no GitHub Pages ou Vercel: link a acrescentar após a publicação.
-- Histórico Git: o repositório possui uma versão inicial e uma versão com melhorias visuais. As alterações seguintes devem ser registradas em novos commits.
-
-Antes da entrega, o grupo deve conferir a página em computador, tablet e smartphone e preparar a apresentação das contribuições de cada integrante.
