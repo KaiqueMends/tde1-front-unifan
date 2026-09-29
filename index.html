@@ -13,11 +13,11 @@
 
     <header class="site-header">
       <nav class="container navbar navbar-expand-md" aria-label="Navegação principal">
-        <a class="brand" href="#inicio" aria-label="SportClub, início">SPORT<span>CLUB</span><span class="brand-dot">.</span></a>
-        <div class="nav-links ms-md-auto">
-          <a href="#sobre">Sobre</a>
-          <a href="#programas">Programas</a>
-          <a href="#comunidade">Comunidade</a>
+        <a class="navbar-brand brand" href="#inicio" aria-label="SportClub, início">SPORT<span>CLUB</span><span class="brand-dot">.</span></a>
+        <div class="navbar-nav nav-links ms-md-auto">
+          <a class="nav-link" href="#sobre">Sobre</a>
+          <a class="nav-link" href="#programas">Programas</a>
+          <a class="nav-link" href="#comunidade">Comunidade</a>
         </div>
       </nav>
     </header>
@@ -31,7 +31,7 @@
               <h1 id="hero-title">Faça cada <em>movimento</em> contar.</h1>
               <p class="hero-description">Uma academia movida por trabalho árduo, energia positiva e conquistas reais. Encontre seu ritmo e venha evoluir com a gente.</p>
               <div class="hero-actions">
-                <a class="button button-light" href="#programas">Conheça os programas <span aria-hidden="true">↗</span></a>
+                <a class="btn button button-light" href="#programas">Conheça os programas <span aria-hidden="true">↗</span></a>
                 <a class="text-link" href="#sobre">Saiba mais <span aria-hidden="true">↓</span></a>
               </div>
             </div>
@@ -83,29 +83,35 @@
           </div>
           <div class="row g-4 program-grid">
             <div class="col-md-4">
-              <article class="program-card h-100">
-                <span class="program-number">01 <span aria-hidden="true">↗</span></span>
-                <div>
-                  <h3>Fitness em grupo</h3>
-                  <p>Treine com companhia, energia e motivação para seguir em frente a cada aula.</p>
+              <article class="card program-card h-100">
+                <div class="card-body">
+                  <span class="program-number">01 <span aria-hidden="true">↗</span></span>
+                  <div>
+                    <h3>Fitness em grupo</h3>
+                    <p>Treine com companhia, energia e motivação para seguir em frente a cada aula.</p>
+                  </div>
                 </div>
               </article>
             </div>
             <div class="col-md-4">
-              <article class="program-card h-100">
-                <span class="program-number">02 <span aria-hidden="true">↗</span></span>
-                <div>
-                  <h3>Perda de peso</h3>
-                  <p>Construa uma rotina de movimento consistente, respeitando seu ritmo e seus objetivos.</p>
+              <article class="card program-card h-100">
+                <div class="card-body">
+                  <span class="program-number">02 <span aria-hidden="true">↗</span></span>
+                  <div>
+                    <h3>Perda de peso</h3>
+                    <p>Construa uma rotina de movimento consistente, respeitando seu ritmo e seus objetivos.</p>
+                  </div>
                 </div>
               </article>
             </div>
             <div class="col-md-4">
-              <article class="program-card h-100">
-                <span class="program-number">03 <span aria-hidden="true">↗</span></span>
-                <div>
-                  <h3>Centro aquático</h3>
-                  <p>Descubra outra forma de se movimentar com atividades dentro da água.</p>
+              <article class="card program-card h-100">
+                <div class="card-body">
+                  <span class="program-number">03 <span aria-hidden="true">↗</span></span>
+                  <div>
+                    <h3>Centro aquático</h3>
+                    <p>Descubra outra forma de se movimentar com atividades dentro da água.</p>
+                  </div>
                 </div>
               </article>
             </div>
@@ -142,12 +148,52 @@
           </div>
         </div>
       </section>
+
+      <section class="section contact-section" id="contato" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow-light">SEU PRÓXIMO PASSO</p>
+            <h2 id="contact-title">Vamos encontrar seu ritmo?</h2>
+            <p>Conte um pouco sobre o que você procura. Este formulário apresenta os campos de interesse do projeto; o envio será ativado quando houver um canal de contato da academia.</p>
+          </div>
+          <form class="contact-form" aria-label="Formulário de interesse">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label" for="nome">Nome</label>
+                <input class="form-control" id="nome" name="nome" type="text" autocomplete="name" required>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" for="email">E-mail</label>
+                <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="interesse">Programa de interesse</label>
+                <select class="form-select" id="interesse" name="interesse" required>
+                  <option value="" selected disabled>Selecione um programa</option>
+                  <option value="fitness-em-grupo">Fitness em grupo</option>
+                  <option value="perda-de-peso">Perda de peso</option>
+                  <option value="centro-aquatico">Centro aquático</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="Fale sobre seus objetivos"></textarea>
+              </div>
+              <div class="col-12 form-actions">
+                <button class="btn button button-primary" type="submit" disabled aria-describedby="form-notice">Enviar interesse <span aria-hidden="true">↗</span></button>
+                <small id="form-notice">Envio indisponível até a definição de um e-mail de contato.</small>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
         <a class="brand" href="#inicio" aria-label="SportClub, voltar ao início">SPORT<span>CLUB</span><span class="brand-dot">.</span></a>
         <p>Faça cada movimento contar.</p>
+        <a href="#contato" class="back-to-top">Contato</a>
         <a href="#inicio" class="back-to-top">Voltar ao topo ↑</a>
       </div>
     </footer>
